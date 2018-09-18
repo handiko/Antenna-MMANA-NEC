@@ -1,0 +1,20 @@
+CM =======
+CM forw: 82, 0 ; back: 82, 180
+CE
+SY freq=138
+SY L=1.046742
+SY R=0.334063
+SY wrad=0.8e-3
+SY H=4
+GW	1	9	0	R*L/2	H	0	-R*L/2	H	wrad
+GW	2	9	0	R*L/2	H	0	R*L/2	H+((1-R)*L/2)	wrad
+GW	3	9	0	-R*L/2	H	0	-R*L/2	H-((1-R)*L/2)	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	4.5	0.0015
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	5	0	1	0	0
+FR,0,1,0,0,138
+PQ -1
+PT -1
