@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CM 
 CE
 SY freq=138
@@ -16,3 +17,21 @@ EX	0	1	1	0	1	0	0
 EX	0	2	1	0	-1	0	0
 FR	0	0	0	0	freq	0
 EN
+=======
+CM 
+CE
+SY freq=138
+SY R=0.529229
+SY theta=98.65959
+SY H=4
+GW	1	10	0	0	H	R*cos(theta/2)	R*sin(theta/2)	H	0.001
+GW	2	10	0	0	H	R*cos(theta/2)	-R*sin(theta/2)	H	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+EX	0	2	1	0	-1	0	0
+FR	0	0	0	0	freq	0
+EN
+>>>>>>> a875697da7f315e2e0ddd791cb27e751b94f4c19

@@ -1,0 +1,18 @@
+CM 
+CM forw: 81, 0 ; back: 81, 180
+CE
+SY freq=138
+SY R=0.534179
+SY theta=45
+SY H=4
+GW	1	10	0	0	H	R*cos(theta/2)	R*sin(theta/2)	H	0.001
+GW	2	10	0	0	H	R*cos(theta/2)	-R*sin(theta/2)	H	0.001
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+EX	0	2	1	0	-1	0	0
+FR,0,1,0,0,138
+PQ -1
+PT -1
