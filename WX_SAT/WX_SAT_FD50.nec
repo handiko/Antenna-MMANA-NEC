@@ -14,7 +14,6 @@ GW	5	1	R*cos(theta/2)	R*sin(theta/2)	H	R*cos(theta/2)	R*sin(theta/2)	H+S	wrad
 GW	6	1	R*cos(theta/2)	-R*sin(theta/2)	H	R*cos(theta/2)	-R*sin(theta/2)	H+S	wrad
 GE	1
 LD	5	0	0	0	58000000
-LD	7	0	0	0	4.5	0.0015
 GN	2	0	0	0	17	0.015
 EK
 EX	0	1	1	0	1	0	0
