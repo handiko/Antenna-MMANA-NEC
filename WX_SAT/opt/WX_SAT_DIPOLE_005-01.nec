@@ -2,8 +2,8 @@ CM =======
 CM forw: 82, 0 ; back: 82, 180
 CE
 SY freq=138
-SY R=0.519574
-SY theta=107.4937
+SY R=0.503759
+SY theta=104.8018
 SY wrad=0.8e-3
 SY H=4
 GW	1	10	0	0	H	R*cos(theta/2)	R*sin(theta/2)	H	wrad
