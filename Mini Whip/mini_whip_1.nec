@@ -1,0 +1,15 @@
+CM =======
+CE
+SY freq=7
+SY w=0.05
+SY m=3
+SY wrad=5e-3
+GW	1	100	0	0	m	0	0	0	wrad
+GW	2	2	0	0	m	0	0	m+w	wrad
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN
