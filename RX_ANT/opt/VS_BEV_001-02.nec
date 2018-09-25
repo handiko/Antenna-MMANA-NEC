@@ -1,0 +1,22 @@
+CM =======
+CM forw: 0, 0 ; back: 0, 180
+CE
+SY freq=7
+SY L=12
+SY H=2
+SY wrad=1e-3
+SY R=276.6398
+GW	1	5	0	0	0	0	0	H	wrad
+GW	2	30	0	0	H	-L	0	H	wrad
+GW	3	5	-L	0	0	-L	0	H	wrad
+GE	1
+LD	5	0	0	0	58000000
+LD	0	3	1	1	R	0
+LD	0	2	15	15	0	10e-6
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0
+FR,0,1,0,0,7
+PQ -1
+PT -1
+RP,0,91,181,1000,-90,0,2,2
