@@ -1,13 +1,15 @@
 CM 
 CE
-SY freq=10.11
+SY freq=7.07
 SY H=7.08146
-SY H2=2.9
-SY L=56.1173
+SY H2=1.5
+SY L=16.99669
 SY prad=30*0.5*1e-3
 GW	1	20	0	0	0	0	0	H	prad
+GW	2	4	0	0	H	0	0	H+H2	prad*3/4
 GE	1
 LD	5	0	0	0	37700000
+LD	0	2	1	1	0.5	L*1e-6
 GN	0	16	0	0	13	0.005	10	1.e-3
 EK
 EX	0	1	1	0	1	0	0
