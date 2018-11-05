@@ -1,0 +1,32 @@
+CM 
+CE
+SY freq=7.05
+SY H=2.5
+SY I=0.4
+SY S=0.15
+SY H2=8
+SY L1=4.821316
+SY L2=1.33523
+SY C=200
+SY r1=18*1e-3
+SY r2=15*1e-3
+SY r3=5*1e-3
+SY Q=300
+SY res1=2*3.14*freq*L1/Q
+SY res2=2*3.14*freq*L2/Q
+GW	1	5	0	0	0	0	0	H	r1
+GW	2	2	0	0	H	0	0	H+I	r1
+GW	3	15	0	0	H+I	0	0	H+I+H2	r2
+GW	4	1	0	0	H	s	0	H	r3
+GW	5	2	s	0	H	s	0	H+I	r3
+GW	6	1	0	0	H+I	s	0	H+I	r3
+GE	1
+LD	5	0	0	0	37700000
+LD	0	2	2	2	res1	L1*1e-6
+LD	0	3	1	1	res2	L2*1e-6
+LD	0	5	2	2	0	0	C*1e-12
+GN	0	16	0	0	13	0.005	10	1.e-3
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN
