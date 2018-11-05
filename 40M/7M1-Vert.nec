@@ -1,0 +1,13 @@
+CM 
+CE
+SY freq=7.07
+SY H=10.16227
+SY prad=30*0.5*1e-3
+GW	1	5	0	0	0	0	0	H	prad
+GE	1
+LD	5	0	0	0	37700000
+GN	0	16	0	0	13	0.005	10	1.e-3
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN
