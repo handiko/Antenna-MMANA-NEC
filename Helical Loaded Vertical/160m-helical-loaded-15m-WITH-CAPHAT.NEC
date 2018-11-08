@@ -1,0 +1,29 @@
+CM 
+CE
+SY freq=1.82
+SY A=2
+SY Rad=10
+SY Nrad=8
+SY CH=1.5
+SY Nch=4
+SY H=15
+SY Lm=4.064101
+SY Q=75
+SY Rm=2*3.14*freq*Lm/Q
+SY wrad=0.75*1e-3
+SY irad=1.5*1e-3
+SY segs=30
+GW	1	segs	0	0	A	0	0	H+A	wrad
+GW	2	int(Rad*segs/H)	0	0	A	Rad	0	A	wrad
+GM	1	Nrad-1	0	0	360/Nrad	0	0	0	2
+GW	2+Nrad	int(CH*segs/H)	0	0	H+A	CH	0	H+A	2*wrad
+GM	1	Nch-1	0	0	360/Nch	0	0	0	2+Nrad
+GE	1
+LD	5	0	0	0	58000000
+LD	7	0	0	0	3.5	irad
+LD	0	1	2	segs	Rm	Lm*1e-6
+GN	2	0	0	0	13	0.005
+EK
+EX	0	1	1	0	1	0	0
+FR	0	0	0	0	freq	0
+EN
