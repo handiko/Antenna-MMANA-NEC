@@ -2,12 +2,12 @@ CM
 CE
 SY freq=3.55
 SY H=10
-SY Lm=7.042215
+SY Lm=3.5
 SY Q=75
 SY Rm=2*3.14*freq*Lm/Q
 SY wrad=0.75*1e-3
 SY irad=1.5*1e-3
-SY segs=10
+SY segs=20
 GW	1	segs	0	0	0	0	0	H	wrad
 GE	1
 LD	5	0	0	0	58000000
