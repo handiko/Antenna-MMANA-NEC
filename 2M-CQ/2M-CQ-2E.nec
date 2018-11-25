@@ -3,7 +3,7 @@ CE
 SY freq=144.3
 SY H=6
 SY w=0.5
-SY S=0.5
+SY S=0.559949
 SY wrad=1*1e-3
 GW	1	7	0	-s/2	-s/2+H	0	-s/2	s/2+H	wrad
 GW	2	7	0	s/2	-s/2+H	0	s/2	s/2+H	wrad
