@@ -4,11 +4,16 @@ SY freq=144.3
 SY H=6
 SY w=0.5
 SY S=0.559949
+SY S2=0.60
 SY wrad=1*1e-3
 GW	1	7	0	-s/2	-s/2+H	0	-s/2	s/2+H	wrad
 GW	2	7	0	s/2	-s/2+H	0	s/2	s/2+H	wrad
 GW	3	7	0	-s/2	-s/2+H	0	s/2	-s/2+H	wrad
 GW	4	7	0	-s/2	s/2+H	0	s/2	s/2+H	wrad
+GW	5	7	-W	-s2/2	-s2/2+H	-W	-s2/2	s2/2+H	wrad
+GW	6	7	-W	s2/2	-s2/2+H	-W	s2/2	s2/2+H	wrad
+GW	7	7	-W	-s2/2	-s2/2+H	-W	s2/2	-s2/2+H	wrad
+GW	8	7	-W	-s2/2	s2/2+H	-W	s2/2	s2/2+H	wrad
 GE	1
 LD	5	0	0	0	37700000
 GN	2	0	0	0	13	0.005
